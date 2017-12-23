@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+
+#main{
+	font-family: 'Montserrat';
+}
+.header{
+	background: url('../img/background-main.jpg') center left no-repeat;
+	border-radius: 0px;
+	color: white;
+	text-align: center;
+}
+.header h1{
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 8px;
+}
+.header p{
+    line-height: 1.5em;
+}
+.header #btn-apply-form{
+	background-color: #00b446;
+	box-shadow: 2px 2px 0px #005b27;
+}
+
+.etapas .col-sm-3{
+	text-align: center;
+}
+.etapas h3{
+}
+.etapas h4{
+	font-size: 12px;
+	font-weight: 400;
+}
+.etapas p{
+	font-weight: 400;
+	text-align: left;
+	margin-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+	.header{
+		background-size: 1600%;
+		padding: 35px 10px 50px;
+	}
+	.header h1{
+		font-size: 40px;
+		line-height: 1.2em;
+	}
+	.header p{
+		font-size: 20px;
+	}
+	.header #btn-apply-form{
+	}
+
+	.etapas .col-sm-3{
+	}
+	.etapas h3{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.etapas h4{
+	}
+	.etapas p{
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 24px;
+	    padding: 0px 10px;
+		text-align: left;
+	}
+
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+	.header{
+		background-size: 700%;
+		background-size: 1600%;
+		padding: 64px 60px 80px;
+	}
+	.header h1{
+		font-size: 43px;
+		line-height: 1.12em;
+		letter-spacing: 0.06em;
+	}
+	.header p{
+		font-size: 19px;
+	}
+	.header #btn-apply-form{
+	}
+
+	.etapas .col-sm-3{
+	}
+	.etapas h3{
+		font-size: 15px;
+		line-height: 22px;
+		padding: 0px 10px;
+	}
+	.etapas h4{
+	}
+	.etapas p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
