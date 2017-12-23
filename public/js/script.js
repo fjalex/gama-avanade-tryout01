@@ -8,26 +8,6 @@ $(document).ready(function() {
     	var name = $('input#name');
     	var email = $('input#email');
     	
-
-    	/*
-    	var namev = $('input#name').val();
-    	var emailv = $('input#email').val();
-    	
-    	if( namev.length == 0 || namev.search(/\w/gi) == -1 ){
-			$('#apply-error').show();
-    		name.add('invalid-feedback').addClass('is-invalid');
-    		return false;
-    	}
-
-    	if( emailv.length == 0 ||
-    		emailv.search(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})+$/gi) == -1)
-		{
-			$('#apply-error').show();
-    		email.add('invalid-feedback').addClass('is-invalid');
-    		return false;
-    	}
-    	*/
-
 		$.ajax({
 			method: 'POST',
 			url: 'http://avanade.gama.academy/api/process_applications',
