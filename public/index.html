@@ -3,16 +3,96 @@
 <head>
 	<title>Avanade Angular Academy by Gama - Simulado #1</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
-<main role="main" id="main"></main>
+<main role="main" id="main">
+	<div class="jumbotron header">
+		<h1>Dê propósito para seu código</h1>
+		<p>Cansado de desenvolver projetos sem sentido? Participe do Avanade Angular Academy</p>
+		<button id="btn-apply-form" class="btn btn-success btn-lg" type="button"
+				data-toggle="modal" data-target="#apply-modal">
+			Inscreva-se
+		</button>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row etapas">
+			<div class="col-sm-3">
+				<h3>Inscrições</h3>
+				<h4>02/dez a 04/jan</h4>
+				<p>Para se inscrever basta preencher o formulário e se preparar para o nosso teste técnico com cursos online e simulados.</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>Teste Técnico</h3>
+				<h4>05 e 06/jan</h4>
+				<p>Em seguida, prove que você está preparado fazendo os testes técnicos totalmente mão na massa.</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>Seleção e Contratação</h3>
+				<h4>07/jan a 14/jan</h4>
+				<p>Os melhores candidatos serão entrevistados e contratados pela Avanade</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>Treinamento</h3>
+				<h4>15/jan a 26/jan</h4>
+				<p>Serão duas semanas de treinamento super hands-on com os melhores devs do mercado</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="apply-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Preencha o formulário abaixo:</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body">
+					<div id="apply-success" class="alert alert-success alert-dismissable collapse" role="alert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Seus dados foram enviados com <strong>Sucesso!</strong>
+					</div>
+					<div id="apply-error" class="alert alert-danger alert-dismissable collapse" role="alert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						Preencha <strong>todos</strong> os campos!
+					</div>
+					<form id="inscrevase" action="/action_page.php">
+						<div class="form-group">
+							<label for="name">Nome:</label>
+							<input id="name" type="text" class="form-control" required>
+							<div id="feedback-name" class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="email">E-mail:</label>
+							<input id="email" type="email" class="form-control" required>
+							<div id="feedback-email" class="invalid-feedback"></div>
+						</div>
+					</form>
+				</div>
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary"
+						data-submit="modal" id="btn-apply">Enviar</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+</main>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/script.js" type="text/javascript" crossorigin="anonymous"></script>
 </body>
 </html>
